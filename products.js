@@ -110,7 +110,7 @@ const products = [
       two: "-",
     },
     bgc: "#dbedff",
-    image: "images/Boosterfat.png",
+    image: "images/boosterfat.png",
     description: {
       enText:
         "Booster Fat is a high-quality nutritional supplement designed to accelerate fish weight gain, enhance fertility, and improve hatch rates. Enriched with essential vitamins and minerals like Vitamin A, Vitamin D3, and Manganese, it strengthens immunity, ensures superior product stability, and maintains quality through continuous research and GMP compliance.",
@@ -209,7 +209,7 @@ const products = [
       two: "500ml",
     },
     bgc: "#79c1ef",
-    image: "images/SureKiller.png",
+    image: "images/sureKiller.png",
     description: {
       enText:
         "Sure Killer is a powerful antiparasitic solution formulated to eliminate external parasites like mites, lice, ticks, and fleas, as well as roundworms such as Ascaridia galli, Heterakis gallinarum, and Cooperia spp. Each ml contains 20 mg of Ivermectin BP, ensuring a parasite-free and healthy aquatic environment for fish.",
