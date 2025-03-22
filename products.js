@@ -363,6 +363,7 @@ const products = [
     originFlag: "🇮🇳",
     sizes: {
       one: "5kg",
+      two: "-",
     },
     bgc: "#dbedff",
     image: "images/Zeo Friend.png",
