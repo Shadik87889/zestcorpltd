@@ -394,8 +394,6 @@ function newsTicker() {
   document.addEventListener("DOMContentLoaded", function () {
     const movingWrapper = document.querySelector(".moving-wrapper");
     const movingText = document.querySelector(".moving-one");
-
-    // Duplicate the text to ensure infinite scrolling effect
     movingWrapper.appendChild(movingText.cloneNode(true));
 
     let position = 0; // Start from center
