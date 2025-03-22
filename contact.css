@@ -303,7 +303,7 @@ button:hover {
 #loader {
   display: none; /* Initially hidden */
   text-align: center;
-  margin-top: 10px;
+  margin-top: -9vw;
 }
 
 /* Loader dots */
