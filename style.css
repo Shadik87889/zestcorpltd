@@ -1,0 +1,1378 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.background-display-image,
+.about-display-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.background-display-image img,
+.about-display-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 2vw;
+  padding: 0 3vw;
+  margin-left: 0;
+}
+.hum-burger-menu {
+  display: none;
+}
+.gallary img {
+  height: 2.4vw;
+}
+.nav .part-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.nav .part-1 a {
+  font-family: Roboto;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.nav .part-1 a:hover {
+  color: #535353;
+}
+.nav .part-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav .part-2 .one {
+  font-family: "Barriecito", serif;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.nav .part-2 .sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4vw;
+  color: #fff;
+}
+.nav .part-2 .sub div {
+  font-family: Roboto;
+  font-weight: 300;
+  letter-spacing: 0.2vw;
+  font-size: 0.7vw;
+}
+.part-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vw;
+  font-family: Roboto;
+}
+.part-3 .contact {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 1.2vw 1.4vw;
+  border-radius: 9vw;
+  font-size: 1vw;
+  transition: 0.2s;
+}
+.part-3 .contact:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+.copyright-text .text {
+  display: flex;
+  flex-direction: column;
+}
+.part-3 .gallary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7vw 1.5vw;
+  border-radius: 9vw;
+  background-color: #fff;
+  border: 1px solid #fff;
+  gap: 0.5vw;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.part-3 .gallary p {
+  color: #000;
+}
+.part-3 .gallary:hover {
+  border-color: #000;
+  background-color: #000;
+}
+
+.hero-texts {
+  position: relative;
+  top: 23vw;
+  left: 2vw;
+}
+.hero-texts .pt-one h1 {
+  font-family: "Nunito Sans", serif;
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: 4.6vw;
+}
+.hero-texts .pt-two {
+  color: #fff;
+  font-family: "Nunito Sans", serif;
+  margin-top: 1.2vw;
+  font-size: 1.3vw;
+}
+.pt-three {
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.pt-three a {
+  background-color: #fff;
+  text-decoration: none;
+  font-family: "Nunito Sans", serif;
+  color: #000;
+  padding: 1vw 1.4vw;
+  border-radius: 2vw;
+}
+
+.pt-three :nth-child(2) {
+  background-color: #59cf35;
+}
+
+/* Hover Effect */
+.pt-three a:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1); /* Slight enlargement effect */
+}
+
+/*for slide*/
+.background-display-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: none;
+  will-change: transform, opacity, filter;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+/*page2*/
+.page2 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5vw 0;
+}
+.page2 .title-slogan {
+  padding: 6vw 25vw;
+}
+.page2 .title-slogan h1 {
+  font-size: 3.7vw;
+  text-align: center;
+  font-weight: 500;
+  line-height: 4vw;
+  font-family: "Nunito Sans", serif;
+}
+
+.some-products-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.some-products-display .one {
+  background-color: #f9e4ad;
+}
+.some-products-display .three {
+  background-color: #cbfee2;
+}
+.some-products-display .four {
+  background-color: #79c1ef;
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #dbedff;
+  height: 39vw;
+  width: 39vw;
+  border-radius: 1.5vw;
+  padding: 2.5vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.product-details .name {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2vw;
+}
+.origin {
+  margin-top: 0.6vw;
+}
+.origin,
+.measurement {
+  font-family: "Montserrat";
+  color: #716e6e;
+}
+.buttons {
+  display: flex;
+  gap: 1vw;
+}
+.buttons a,
+.see-more-btn {
+  background-color: #fff;
+  text-decoration: none;
+  font-family: "Nunito Sans", serif;
+  font-size: 1vw;
+  color: #000;
+  padding: 1vw 1.4vw;
+  border-radius: 2vw;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.see-more-btn {
+  margin-top: 3vw;
+  background-color: #000000;
+  color: #fff;
+}
+.buttons :nth-child(1) {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 🚀 Hover Effect - Subtle Glow */
+.buttons a:hover {
+  filter: brightness(1.2); /* Slight brightness increase */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Slight elevation */
+}
+.see-more-btn:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+/* 🔥 Active Effect - Press Down */
+.buttons a:active {
+  transform: translateY(2px); /* Press-down effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.see-more-btn:active {
+  transform: translateY(2px); /* Press-down effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* ✨ Ripple Click Effect */
+.buttons a:active::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  animation: ripple 0.4s ease-out;
+}
+
+@keyframes ripple {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+.product-img img {
+  height: 25vw;
+
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.page2 {
+  align-items: center;
+  position: relative;
+}
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5vw;
+  background-color: #ead8c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.page3 .one {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial;
+  font-size: 0.8vw;
+  padding: 0.5vw;
+  border-radius: 2vw;
+}
+.page3 .two {
+  padding: 3vw 12vw;
+}
+.page3 .two h1 {
+  font-size: 3.2vw;
+  text-align: center;
+  font-family: "Nunito Sans", serif;
+  font-weight: 500;
+  line-height: 3.4vw;
+  color: #fff;
+}
+/* General Page Styles */
+.page4 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2a3a; /* Dark background for contrast */
+}
+
+.zest-text {
+  font-family: "Barriecito", serif;
+  font-size: 7rem;
+  color: #e4e4e4; /* Keeping the second color */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 2px 5px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(50px) scale(1.1) perspective(500px) rotateX(-15deg); /* Slight rotation for curve effect */
+  margin-bottom: 1vw;
+  transition: opacity 0.5s ease-out, transform 1.5s ease-out;
+  position: absolute;
+  white-space: nowrap;
+  bottom: 10vw;
+}
+
+.zest-text.appear {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateX(0deg); /* Text stands up and returns to normal */
+}
+.page3 .four {
+  position: relative;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+.page3 .quick-product img {
+  height: 37vw;
+  margin-top: 4vw;
+  z-index: 2;
+  position: relative;
+}
+.backgroun-imgs img {
+  height: 45vw;
+  left: -8vw;
+  position: absolute;
+}
+.page3 .quick-product {
+  position: relative;
+}
+.product-text {
+  position: absolute;
+  top: 14vw;
+  left: 9.4vw;
+  z-index: 3;
+  opacity: 0.9;
+  font-family: "Righteous", sans-serif;
+  color: #d2874a;
+  font-weight: 900;
+  font-size: 5vw;
+  /* text-transform: capitalize; */
+}
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  padding: 6vw 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+}
+.page5 .part-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.underline {
+  text-decoration: underline;
+}
+.page5 .part-one h1 {
+  color: #fff;
+  font-family: "Nunito Sans", serif;
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 4vw;
+}
+.page5 .part-one p {
+  font-size: 1.5vw;
+  color: #fff;
+  font-family: "Nunito Sans", serif;
+  width: 40vw;
+}
+.page5 .part-two {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.page5 .part-two .first-disease {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1vw;
+  /* overflow: hidden; */
+}
+
+.page5 .part-two .first-disease img {
+  height: 40vw;
+  width: 27vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  transition: transform 0.5s ease;
+}
+
+.page5 .part-two .first-disease:hover img {
+  /* transform: scale(1.1); */
+}
+
+.page5 .part-two .first-disease h4 {
+  font-family: "Nunito Sans", serif;
+  font-weight: 400;
+  font-size: 1.8vw;
+  color: #fff;
+  transition: color 0.7s ease;
+}
+
+.plus-span {
+  font-size: 2vw;
+  color: #b4abab;
+  transition: transform 0.5s ease, color 0.7s ease;
+}
+
+.page5 .part-two .first-disease:hover .plus-span {
+  transform: rotate(45deg);
+  color: #2d9cdb;
+}
+
+.disease-details {
+  position: absolute;
+  bottom: 2vw;
+  bottom: -5vw;
+  left: 1.4vw;
+  padding: 2vw 1.6vw;
+  width: 90%;
+  border-radius: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.7s ease;
+  background-color: transparent;
+}
+
+.disease-details p {
+  font-size: 1.1vw;
+  margin-top: 1vw;
+  font-family: "Nunito Sans", serif;
+  line-height: 1.3vw;
+  color: #b7b7b7;
+  transition: 0.7s ease;
+  opacity: 0;
+}
+
+.page5 .part-two .first-disease:hover .disease-details {
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  bottom: 2vw;
+}
+.page5 .part-two .first-disease:hover .disease-details p {
+  opacity: 1;
+  /* color: #000; */
+}
+.page5 .part-two .first-disease:hover h4 {
+  /* color: #000; */
+}
+.part-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 4vw;
+}
+
+.part-three .backward,
+.part-three .forward {
+  width: 12vw;
+  height: 12vw;
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #2d9cdb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.part-three .backward i,
+.part-three .forward i {
+  font-size: 5vw;
+  color: #2d9cdb;
+  transition: color 0.3s ease;
+}
+
+.part-three .backward:hover,
+.part-three .forward:hover {
+  background-color: #2d9cdb;
+}
+
+.part-three .backward:hover i,
+.part-three .forward:hover i {
+  color: #fff;
+}
+.part-three {
+  display: none;
+}
+.page6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.page6 img {
+  height: 100%;
+  width: 100%;
+  /* border-radius: 2vw; */
+  object-fit: cover;
+}
+.page6 .slogan {
+  position: absolute;
+  font-family: "Nunito Sans";
+  font-family: "Neucha", cursive;
+  font-size: 4.2vw;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+.page7 {
+  background-color: #fff;
+  padding: 2.5vw;
+  overflow: hidden;
+}
+.page7 .page5 {
+  background-color: #f9f7f4;
+  border-radius: 2vw;
+  align-items: center;
+}
+.page7 .page5 .testimonial-text {
+  text-align: center;
+  color: #827878;
+}
+.page7 .page5 .part-two .first-disease img {
+  height: 36vw;
+}
+.page7 .page5 {
+  padding-bottom: 3vw;
+}
+/* footer */
+
+/* Full-page footer */
+footer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: white;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0.2vw;
+  background-color: #f1ebeb;
+  gap: 0.5vw;
+}
+
+/* Top Section: Left, Center & Logo */
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 90vw;
+  margin: auto;
+  align-items: start;
+  padding-bottom: 2.083vw;
+  border-bottom: 0.052vw solid #ddd;
+  border-radius: 0.521vw;
+  height: 98%;
+  background-color: #fff;
+  padding: 5vw;
+  box-shadow: 0 0.104vw 0.26vw rgba(0, 0, 0, 0.1);
+  margin-left: 0.5vw;
+}
+
+/* Left Section */
+.footer-left {
+  font-size: 1.616vw;
+  color: black;
+  line-height: 1.5;
+}
+
+/* Center Section */
+.footer-center {
+  display: flex;
+  justify-content: center;
+  gap: 8.081vw;
+}
+
+.footer-center div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 1.5vw;
+  color: gray;
+  text-transform: lowercase;
+  margin-bottom: 0.417vw;
+}
+
+.footer-center a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1vw;
+  margin: 0.26vw 0;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Logo */
+.footer-logo {
+  text-align: center;
+  font-size: 8vw;
+  font-weight: bold;
+  margin-top: 15vw;
+}
+
+.logo-dot {
+  color: blue;
+  font-family: "Neucha", cursive;
+}
+
+/* Bottom Section: Contact, Subscribe, & Footer Text */
+.footer-bottom {
+  display: grid;
+  justify-content: space-between;
+  padding: 0.7vw 0;
+  flex-direction: column;
+}
+
+/* Right Section */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  justify-content: space-between;
+}
+
+/* Contact Box */
+.contact-box {
+  background: #f8f8f8;
+  padding: 1.042vw;
+  border-radius: 0.521vw;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 0.104vw 0.26vw rgba(0, 0, 0, 0.1);
+  height: 50%;
+}
+
+.contact-button {
+  background: #eee;
+  border: none;
+  padding: 0.625vw 1.042vw;
+  cursor: pointer;
+  font-size: 0.833vw;
+  border-radius: 0.26vw;
+  width: 100%;
+}
+
+.contact-button:hover {
+  background: #ddd;
+}
+
+/* Subscription Box */
+.subscribe-box {
+  background: #0057ff;
+  color: white;
+  padding: 1.042vw;
+  border-radius: 0.521vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 50%;
+}
+.subscribe-box .footer-title {
+  color: #ffff;
+  font-size: 1.8vw;
+}
+.subscribe-input {
+  display: flex;
+  background: white;
+  border-radius: 0.26vw;
+  margin-top: 0.521vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.subscribe-input a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 1vw;
+  background-color: #d2e5ff;
+  transition: 0.3s;
+}
+.subscribe-input a:hover {
+  background-color: #ffffff;
+}
+.subscribe-button {
+  background: #ddd;
+  border: none;
+  padding: 0.625vw 1.042vw;
+  cursor: pointer;
+  font-size: 0.833vw;
+  border-radius: 0.26vw;
+}
+
+.subscribe-button:hover {
+  background: #bbb;
+}
+
+.small-text {
+  font-size: 0.625vw;
+  margin-top: 0.417vw;
+}
+
+/* Footer Note */
+.footer-note {
+  text-align: right;
+  font-size: 0.729vw;
+  color: gray;
+}
+
+.page8 {
+  height: 100vh;
+  width: 100%;
+}
+.page8 .apply-now {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.page8 .apply-now img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page8 .apply-now .apply-now-text-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page8 .apply-now .apply-now-text-button h1 {
+  color: #fff;
+  font-family: "Nunito Sans", serif;
+  font-weight: 400;
+  font-size: 4vw;
+  text-align: center;
+  line-height: 4.5vw;
+}
+.page8 .apply-now .apply-now-text-button a {
+  display: inline-block;
+  padding: 16px 36px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 5px 15px rgba(110, 69, 226, 0.3);
+}
+
+.page8 .apply-now .apply-now-text-button a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out, opacity 0.3s;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.page8 .apply-now .apply-now-text-button a:hover::before {
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+
+.page8 .apply-now .apply-now-text-button a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(110, 69, 226, 0.4);
+  background: linear-gradient(135deg, #88d3ce, #6e45e2);
+}
+.copyright-text {
+  height: 10vh;
+  width: 100%;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1ebeb;
+  padding: 0.3vw 0.5vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.text {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  margin-top: -1.2vw;
+}
+/* lastly added */
+.page-5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1c0901;
+  background-color: #ead8c9;
+}
+.page-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-5 .page-5-img-box {
+  height: 32vw;
+  width: 32vw;
+  scale: 0.5;
+}
+.page-5 .page-5-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.page-5 .com-text {
+  position: absolute;
+}
+.page-5 .com-text h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Anton";
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 900;
+  text-align: center;
+  line-height: 10vw;
+}
+.page-5 .com-text :nth-child(1) {
+  position: relative;
+  left: -17vw;
+}
+.page-5 .com-text :nth-child(2) {
+  position: relative;
+  left: 17vw;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: flex-start;
+    padding: 5vw;
+    gap: 4vw;
+  }
+  .nav .part-1 {
+    display: none;
+  }
+  .hum-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2vw;
+  }
+  .hum-burger-menu .one,
+  .hum-burger-menu .two {
+    height: 1.4px;
+    width: 30px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  .hum-burger-menu .one {
+    height: 1.5px;
+  }
+  .nav .part-1 a.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .contact {
+    display: none;
+  }
+  .part-2 {
+    color: #fff;
+  }
+  .nav .part-2 .one {
+    font-size: 7vw;
+    color: #fff;
+  }
+  .nav .part-2 .sub div {
+    font-size: 2vw;
+    letter-spacing: 1.2vw;
+  }
+  .part-3 .gallary {
+    padding: 2.5vw 3.5vw;
+    margin-left: 21vw;
+  }
+  .part-3 .gallary img {
+    height: 6vw;
+    margin-right: 4vw;
+  }
+  .hero-texts {
+    top: 95vw;
+    left: 5vw;
+  }
+  .hero-texts .pt-one h1 {
+    font-size: 12vw;
+    line-height: 12.5vw;
+  }
+  .pt-two p {
+    font-size: 4vw;
+  }
+  .pt-three {
+    gap: 4vw;
+  }
+  .pt-three a {
+    padding: 3vw;
+    border-radius: 8vw;
+  }
+
+  .some-products-display {
+    flex-direction: column;
+    padding: 0;
+    gap: 8vw;
+  }
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #dbedff;
+    height: 100vw;
+    width: 80vw;
+    border-radius: 1.5vw;
+    padding: 2.5vw;
+  }
+  .product-img img {
+    height: 57vw;
+  }
+  .product-details .name {
+    font-size: 7vw;
+  }
+  .buttons {
+    gap: 3vw;
+  }
+  .buttons a {
+    padding: 3.5vw 4vw;
+    border-radius: 10vw;
+    font-size: 3vw;
+  }
+  .page2 .title-slogan {
+    padding: 15vw 8vw;
+  }
+  .page2 .title-slogan h1 {
+    font-size: 7vw;
+    text-align: center;
+    font-weight: 500;
+    line-height: 7.5vw;
+    font-family: "Nunito Sans", serif;
+  }
+  .page2 {
+    padding: 15vw 0;
+    padding-top: 0;
+  }
+  .page3 {
+    padding: 15vw 5vw;
+    gap: 5vw;
+  }
+
+  .page3 .one {
+    font-size: 4vw;
+    padding: 3vw;
+    border-radius: 6vw;
+  }
+
+  .page3 .two {
+    padding: 5vw 3vw;
+  }
+
+  .page3 .two h1 {
+    font-size: 8vw;
+    line-height: 8.3vw;
+    color: #fff;
+  }
+  .page3 .buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+  }
+  .page3 .buttons :nth-child(1) {
+    padding: 4vw;
+    text-align: center;
+    font-size: 5vw;
+    width: 60vw;
+  }
+  .page3 .buttons :nth-child(2) {
+    width: 45vw;
+    padding: 4vw;
+    text-align: center;
+  }
+  .page3 .quick-product img {
+    height: 80vw;
+    margin-top: 5vw;
+  }
+  .zest-text {
+    font-size: 6.2vw;
+    top: 60%;
+  }
+  .page5 .part-one {
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+  }
+  .page5 {
+    min-height: 100vh;
+    padding-top: 10vw;
+    gap: 15vw;
+  }
+  .page5 .part-one h1 {
+    font-size: 10vw;
+    line-height: 10vw;
+    text-align: center;
+    font-weight: 300;
+  }
+  .page5 .part-one p {
+    text-align: center;
+    font-size: 4vw;
+    width: 100%;
+  }
+  .page5 .part-two {
+    overflow-x: auto;
+    gap: 6vw;
+    scroll-snap-type: x mandatory;
+  }
+  .page5 .part-two .first-disease {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border-radius: 0;
+  }
+  .page5 .part-two .first-disease img {
+    height: 80vw;
+    width: 70vw;
+    border-radius: 0;
+  }
+  .first-disease {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .disease-details {
+    opacity: 1;
+    position: static;
+    background-color: #1c1b1a;
+    height: 40vw;
+    border-radius: 0;
+    width: 70vw;
+    padding: 5vw;
+    z-index: 2;
+  }
+  .page7 .disease-details {
+    height: 55vw;
+  }
+  .page5 .part-two .first-disease h4 {
+    font-size: 7vw;
+  }
+  .page5 .part-two .first-disease .disease-details p {
+    font-size: 4vw;
+    line-height: 5vw;
+    opacity: 1;
+  }
+  .page5 .part-two .first-disease.first-disease:hover .disease-details {
+    background-color: #1c1b1a;
+  }
+  .plus-span {
+    font-size: 6vw;
+  }
+  .mobile-cut {
+    display: none;
+  }
+  .page5 .part-two .first-disease:hover img {
+    transform: scale(1.1);
+  }
+  .part-three {
+    gap: 8vw;
+    margin-top: -4vw;
+    margin-bottom: 4vw;
+    display: flex;
+  }
+
+  .part-three .backward,
+  .part-three .forward {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  .part-three .backward i,
+  .part-three .forward i {
+    font-size: 6vw;
+  }
+  .backgroun-imgs img {
+    height: 90vw;
+    left: -13vw;
+  }
+  .product-text {
+    font-size: 12vw;
+    left: 19vw;
+    top: 23vw;
+  }
+  .page6 {
+    height: 70vh;
+  }
+  .page7 .page5 {
+    align-items: normal;
+    padding: 7vw 4vw;
+  }
+  .page7 .page5 .part-one h1 {
+    font-size: 7vw;
+    line-height: 7.5vw;
+    font-weight: 400;
+  }
+  .underline {
+    text-decoration: none;
+  }
+  .page7 .page5 .part-two .first-disease img {
+    height: 80vw;
+  }
+  .page7 .disease-details {
+    background-color: #fff;
+  }
+  .page7 .page5 .disease-details h4 {
+    color: #000;
+  }
+  .page7 .page5 .disease-details p {
+    color: #5c5555;
+  }
+  .page7 .page5 .part-two .first-disease.first-disease:hover .disease-details {
+    background-color: #ffffff;
+  }
+  .page8 {
+    height: 60vh;
+  }
+  .page8 .apply-now .apply-now-text-button {
+    width: 95%;
+    gap: 6vw;
+  }
+  .page8 .apply-now .apply-now-text-button h1 {
+    font-size: 7.5vw;
+    line-height: 8vw;
+  }
+  .page8 .apply-now .apply-now-text-button a {
+    font-size: 6;
+  }
+  .page6 .slogan {
+    font-size: 8.5vw;
+  }
+  footer {
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 120vh;
+    overflow: hidden;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    width: 98%;
+    gap: 20vw;
+    height: 63vh;
+  }
+  .footer-title {
+    font-size: 4vw;
+  }
+  .footer-center {
+    flex-direction: column;
+    gap: 6vw;
+  }
+  .footer-center a {
+    font-size: 4.5vw;
+  }
+  .footer-center a:active {
+    text-decoration: underline;
+  }
+  .contact-box {
+    height: 30vh;
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+  }
+  .subscribe-box {
+    height: 25vh;
+    width: 98vw;
+  }
+  .footer-logo {
+    margin-top: -40vw;
+  }
+  .contact-box div .footer-title {
+    font-size: 7vw;
+  }
+  .subscribe-box .footer-title {
+    font-size: 6vw;
+  }
+  .copyright-text .text {
+    width: 98vw;
+    margin-top: 1.4vw;
+  }
+
+  .page-5 .page-5-img-box {
+    height: 72vw;
+    width: 72vw;
+    scale: 0.5;
+  }
+  .page-5 .page-5-img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .page-5 .com-text h1 {
+    font-size: 7.5vw;
+    font-family: "Anton";
+    line-height: 13vw;
+  }
+  .page-5 .com-text :nth-child(1) {
+    position: relative;
+    left: -17vw;
+  }
+  .page-5 .com-text :nth-child(2) {
+    position: relative;
+    left: 17vw;
+  }
+  .contact-button {
+    font-size: 5vw;
+    padding: 2vw;
+  }
+  .subscribe-input {
+    border-radius: 1vw;
+  }
+  .subscribe-input a {
+    font-size: 5vw;
+    border-radius: 1vw;
+  }
+  .small-text {
+    font-size: 3vw;
+    margin-top: 1.2vw;
+  }
+  .footer-left {
+    font-size: 4vw;
+  }
+  .see-more-btn {
+    font-size: 4vw;
+    padding: 3vw 4vw;
+    border-radius: 6vw;
+    margin-top: 7vw;
+    border: 3px solid #ffaaaa;
+  }
+}

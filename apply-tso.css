@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Antonio:wght@100..700&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+.page1 {
+  position: relative;
+}
+.page1 .pt-one {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2vw;
+}
+.page1 .pt-one h1 {
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #523122;
+  color: #fff;
+  font-size: 7vw;
+  line-height: 9vw;
+  font-weight: 999;
+  letter-spacing: -0.1vw;
+}
+.page1 .pt-one :nth-child(2) {
+  color: #dcd7d7;
+  background-color: #e79e5c;
+  padding: 1.2vw;
+  padding-top: 0.2vw;
+  position: relative;
+  transform: rotate(-2deg);
+  margin-top: -1vw;
+  color: #5a2e1c;
+}
+.page1 .pt-one a {
+  background-color: #e79e5c;
+  border: none;
+  padding: 1.1vw 2.5vw;
+  border-radius: 30px;
+  color: #5a2e1c;
+  font-weight: bold;
+  cursor: pointer;
+  width: 10vw;
+  font-family: "Anton";
+  font-weight: 300;
+  font-size: 1.1vw;
+  margin-top: 5vw;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.page1 .pt-one a:hover {
+  background-color: #ffffff;
+}
+.page1 .pt-one a:active {
+  background-color: #cbbaba;
+}
+.part-3 .gallary:hover {
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  .page1 .pt-one h1 {
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #523122;
+    color: #fff;
+    font-size: 11vw;
+    line-height: 9vw;
+    font-weight: 999;
+    letter-spacing: -0.1vw;
+  }
+  .page1 .pt-one :nth-child(2) {
+    color: #dcd7d7;
+    background-color: #e79e5c;
+    padding: 2vw;
+    padding-top: 0.2vw;
+    position: relative;
+    transform: rotate(-2deg);
+    margin-top: 1vw;
+    font-size: 10vw;
+    color: #5a2e1c;
+  }
+  .page1 .pt-one a {
+    background-color: #e79e5c;
+    border: none;
+    padding: 1.1vw 2.5vw;
+    border-radius: 30px;
+    color: #5a2e1c;
+    font-weight: bold;
+    cursor: pointer;
+    width: 22vw;
+    text-align: center;
+    font-family: "Anton";
+    font-weight: 300;
+    font-size: 4vw;
+    margin-top: 5vw;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+}

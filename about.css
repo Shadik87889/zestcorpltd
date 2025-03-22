@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+.page1 {
+  background-color: #1c0901;
+}
+.about-display-image {
+  position: relative;
+  display: inline-block;
+}
+.page1 .pt-one.about-page-pt-one h1 {
+  font-size: 6vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+.page1 .pt-two p {
+  font-family: "Nunito Sans";
+  width: 40vw;
+}
+.about-display-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+.page2 {
+  background-color: #1c0901;
+}
+.page2.about-page2 {
+  position: relative;
+  padding: 12vw;
+}
+.page2.about-page2 .first-img-container {
+  position: relative;
+  height: 200vh; /* Match the image height */
+  overflow: hidden;
+}
+
+.page2.about-page2 .first-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.page2.about-page2 .first-img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black opacity */
+}
+
+.page2.about-page2 h1 {
+  font-size: 7vw;
+  line-height: 7vw;
+  color: #fff;
+  font-family: "Modern Antiqua", serif;
+  /* font-family: "Neucha", cursive; */
+  font-weight: 400;
+  position: absolute;
+  top: 8vw;
+  left: 8vw;
+}
+.page2.about-page2 .part2-first-text {
+  color: #fff;
+  position: absolute;
+  width: 25vw;
+  font-family: "Nunito Sans";
+  font-size: 1.2vw;
+  top: 30vw;
+  left: 25vw;
+}
+.page2.about-page2 .second-img {
+  height: 25vw;
+  width: 35vw;
+  object-fit: cover;
+  position: absolute;
+  bottom: 43vw;
+  left: 0;
+}
+
+.page2.about-page2 .page2-second-img-text {
+  font-family: "Modern Antiqua", serif;
+  font-size: 2.5vw;
+  width: 37vw;
+  line-height: 2.6vw;
+  position: absolute;
+  bottom: 30vw;
+  left: 20vw;
+  color: #fff;
+}
+.page2.about-page2 .con-btn {
+  color: #000;
+  background-color: #fff;
+  font-family: "Nunito Sans";
+  position: absolute;
+  text-decoration: none;
+  bottom: 26vw;
+  left: 20vw;
+  padding: 0.7vw 1.5vw;
+}
+.page2.about-page2 .third-img {
+  height: 17vw;
+  position: absolute;
+  object-fit: cover;
+  right: 37vw;
+  bottom: 10vw;
+}
+.page2.about-page2 .forth-img {
+  height: 26vw;
+  width: 35vw;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 5vw;
+}
+.page-4 {
+  background-color: #1c0901;
+  /* background: linear-gradient(to bottom, #1c0901, #ead8c9); */
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15vw;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.page-4 h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Alex Brush", cursive;
+  font-size: 2.5vw;
+}
+.page-4 p {
+  color: #fff;
+  font-family: "Modern Antiqua", serif;
+}
+.page-5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1c0901;
+  background-color: #ead8c9;
+}
+.page-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-5 .page-5-img-box {
+  height: 32vw;
+  width: 32vw;
+  scale: 0.5;
+}
+.page-5 .page-5-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.page-5 .com-text {
+  position: absolute;
+}
+.page-5 .com-text h1 {
+  font-family: "Anton";
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 900;
+  text-align: center;
+  line-height: 10vw;
+}
+.page-5 .com-text :nth-child(1) {
+  position: relative;
+  left: -17vw;
+}
+.page-5 .com-text :nth-child(2) {
+  position: relative;
+  left: 17vw;
+}
+@media (max-width: 786px) {
+  .page1 .pt-one.about-page-pt-one h1 {
+    font-size: 10vw;
+    margin-top: 7vw;
+  }
+  .page1 .pt-two p {
+    font-family: "Nunito Sans";
+    width: 80%;
+    font-size: 4.5vw;
+  }
+
+  .page2.about-page2 h1 {
+    font-size: 13vw;
+    line-height: 13vw;
+    left: 3vw;
+  }
+  .page2.about-page2 .first-img-container {
+    position: relative;
+    height: 150vh;
+  }
+
+  .page2.about-page2 .part2-first-text {
+    color: #fff;
+    position: absolute;
+    width: 90%;
+
+    font-family: "Nunito Sans";
+    font-size: 5vw;
+    left: 5vw;
+    top: 40vw;
+  }
+  .page2.about-page2 .second-img {
+    height: 50vw;
+    width: 75vw;
+    bottom: 70vh;
+    left: 0;
+  }
+
+  .page2.about-page2 .page2-second-img-text {
+    font-family: "Modern Antiqua", serif;
+    font-size: 6vw;
+    line-height: 7vw;
+    width: 92%;
+    position: absolute;
+    bottom: 95vw;
+    left: 4vw;
+    color: #fff;
+  }
+  .page2.about-page2 .con-btn {
+    color: #000;
+    background-color: #fff;
+    font-family: "Nunito Sans";
+    position: absolute;
+    text-decoration: none;
+    bottom: 75vw;
+    font-weight: 600;
+    left: 4vw;
+    padding: 4vw;
+    text-align: center;
+    width: 90%;
+  }
+  .page2.about-page2 .third-img {
+    height: 30vw;
+    position: absolute;
+    object-fit: cover;
+    right: 60vw;
+    /* bottom: 20vw; */
+  }
+  .page2.about-page2 .forth-img {
+    height: 46vw;
+    width: 55vw;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 5vw;
+  }
+  .quote-container {
+    gap: 6vw;
+  }
+  .page-4 h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Alex Brush", cursive;
+    font-size: 7vw;
+  }
+  .page-4 p {
+    color: #fff;
+    font-family: "Modern Antiqua", serif;
+  }
+
+  .page-5 .page-5-img-box {
+    height: 72vw;
+    width: 72vw;
+    scale: 0.5;
+  }
+  .page-5 .page-5-img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .page-5 .com-text h1 {
+    font-size: 7.5vw;
+    font-family: "Anton";
+    line-height: 13vw;
+  }
+  .page-5 .com-text :nth-child(1) {
+    position: relative;
+    left: -17vw;
+  }
+  .page-5 .com-text :nth-child(2) {
+    position: relative;
+    left: 17vw;
+  }
+}

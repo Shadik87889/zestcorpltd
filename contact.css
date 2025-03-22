@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Antonio:wght@100..700&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+.page1 {
+  position: relative;
+  min-height: 120vh;
+}
+.con-elemts {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+.get-in-touch {
+  width: 26vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vw;
+}
+.get-in-touch h1 {
+  color: #f8e4d5;
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  line-height: 7.5vw;
+  font-family: "Antonio", sans-serif;
+}
+.get-in-touch p {
+  font-size: 1vw;
+  color: #e6dad1;
+
+  font-family: "Nunito Sans";
+}
+.contact-form {
+  background-color: #f2d5c0;
+  padding: 3vw;
+  border-radius: 2vw;
+  text-align: center;
+  width: 47vw;
+  /* height: 46vw; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  margin-top: -4vw;
+}
+
+.contact-form h2 {
+  color: #5a2e1c;
+  font-size: 2.9vw;
+  margin-bottom: 20px;
+  font-family: "Antonio", sans-serif;
+  line-height: 3vw;
+  letter-spacing: -0.1vw;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 2vw;
+}
+
+.inputs,
+select,
+.contact-textarea {
+  background-color: #f8e4d5;
+  border: none;
+  padding: 1.5vw;
+  border-radius: 30px;
+  font-size: 1.1vw;
+  width: 100%;
+  outline: none;
+}
+
+input::placeholder,
+select,
+textarea::placeholder {
+  color: #5a2e1c;
+}
+.contact-textarea {
+  border-radius: 3vw;
+  height: 11vw;
+  resize: none;
+  width: 100%;
+  padding: 2vw;
+  font-size: 1.2vw;
+}
+
+.submit-button,
+.next-button,
+.prev-button {
+  background-color: #e79e5c;
+  border: none;
+  padding: 1.1vw 2.5vw;
+  border-radius: 30px;
+  color: #5a2e1c;
+  font-weight: bold;
+  cursor: pointer;
+  width: 10vw;
+  margin-top: 10px;
+  font-family: "Anton";
+  font-weight: 300;
+  font-size: 1.1vw;
+  margin-top: 3vw;
+  margin-right: 1vw;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+.page-02 {
+  background-color: #ead8c9;
+  background-color: #e3dfdf;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2vw;
+  gap: 2vw;
+}
+.page-02 .pt-one {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page-02 .pt-one h1 {
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #523122;
+  font-size: 7vw;
+  line-height: 9vw;
+}
+.page-02 .pt-one :nth-child(2) {
+  color: #dcd7d7;
+  background-color: #e79e5c;
+  padding: 1.2vw;
+  padding-top: 0.2vw;
+  position: relative;
+  transform: rotate(-2deg);
+}
+.page-02 .pt-two {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  row-gap: 2vw;
+  column-gap: 2vw;
+}
+.page-02 .pt-two .ques {
+  font-family: "Nunito Sans";
+  font-size: 1.5vw;
+  background-color: #edc8ad;
+  padding: 2.7vw;
+  border-radius: 6vw;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .page1 {
+    height: 140vh;
+  }
+  .page1 .con-elemts {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+    gap: 15vw;
+  }
+  .get-in-touch {
+    gap: 10vw;
+  }
+  .get-in-touch h1 {
+    font-size: 20vw;
+    line-height: 20vw;
+    color: #5a2e1c;
+  }
+  .get-in-touch p {
+    font-size: 4vw;
+    width: 90vw;
+    font-weight: 700;
+    text-align: center;
+    color: #5a2e1c;
+  }
+  .contact-form {
+    width: 100vw;
+    padding: 5vw 3vw;
+    border-radius: 6vw;
+  }
+  .input-row {
+    flex-direction: column;
+  }
+  .contact-form h2 {
+    color: #5a2e1c;
+    font-size: 8vw;
+    margin-bottom: 20px;
+    line-height: 8vw;
+  }
+  .inputs,
+  select,
+  .contact-textarea {
+    background-color: #f8e4d5;
+    border: none;
+    padding: 5vw;
+    border-radius: 30px;
+    font-size: 4vw;
+    width: 100%;
+    outline: none;
+  }
+
+  input::placeholder,
+  select,
+  textarea::placeholder {
+    color: #5a2e1c;
+  }
+
+  .contact-textarea {
+    border-radius: 3vw;
+    height: 40vw;
+    resize: none;
+    width: 100%;
+    padding: 5vw;
+    font-size: 4vw;
+  }
+
+  .submit-button {
+    background-color: #e79e5c;
+    border: none;
+    border-radius: 30px;
+    color: #5a2e1c;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    /* margin-top: 10px; */
+    font-family: "Anton";
+    font-weight: 300;
+    font-size: 5vw;
+    margin-top: 4vw;
+    margin-bottom: 10vw;
+  }
+
+  .page-02 {
+    background-color: #ead8c9;
+    background-color: #e3dfdf;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw;
+    gap: 13vw;
+  }
+  .page-02 .pt-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .page-02 .pt-one h1 {
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #523122;
+    font-size: 12vw;
+    line-height: 9vw;
+  }
+  .page-02 .pt-one :nth-child(2) {
+    color: #dcd7d7;
+    background-color: #e79e5c;
+    padding: 4vw;
+    padding-top: 3vw;
+    position: relative;
+    transform: rotate(-2deg);
+  }
+  .page-02 .pt-two {
+    display: grid;
+    grid-template-columns: 85vw;
+    row-gap: 4vw;
+    column-gap: 2vw;
+  }
+  .page-02 .pt-two .ques {
+    font-family: "Nunito Sans";
+    font-size: 4vw;
+    background-color: #edc8ad;
+    padding: 7vw;
+    border-radius: 10vw;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+/* Loader container */
+#loader {
+  display: none; /* Initially hidden */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Loader dots */
+#loader span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  background-color: #3498db; /* Blue color */
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Animate each dot with a delay */
+#loader span:nth-child(1) {
+  animation-delay: 0s;
+}
+#loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    opacity: 0.3;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

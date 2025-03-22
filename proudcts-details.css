@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anek+Bangla:wght@100..800&family=Anton&family=Anton+SC&family=Antonio:wght@100..700&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Noto+Serif+Bengali:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anek+Bangla:wght@100..800&family=Anton&family=Anton+SC&family=Antonio:wght@100..700&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Antonio:wght@100..700&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton+SC&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Golos+Text:wght@400..900&family=Grechen+Fuemen&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav .gallary {
+  background-color: #000;
+}
+
+body {
+  background-color: #ebe9e6;
+  background-color: #fff;
+}
+.product-details-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+}
+/* Product Details Page */
+.all-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* backdrop-filter: blur(10px); */
+  padding: 30px;
+  border-radius: 15px;
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
+  /* max-width: 900px; */
+  width: 100%;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+  /* background-color: #ebe9e6; */
+}
+
+.all-products:hover {
+  /* transform: scale(1.02); */
+}
+.left-side {
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3vw;
+  border: 5px solid #dcd4d4;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+}
+/* Left Side - Image */
+.left-side img {
+  width: 20vw;
+  border-radius: 15px;
+}
+
+/* Right Side */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 50vw;
+  background-color: #fff;
+  height: 100%;
+  padding: 2vw;
+  border: 5px solid #dcd4d4;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 0.3vw;
+}
+
+/* Product Name */
+.name-origin h1 {
+  font-size: 5vw;
+  font-weight: 600;
+  color: #222;
+  font-family: "Antonio";
+  text-transform: uppercase;
+}
+
+.name-origin h2 {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Language Toggle */
+.toggle-btns {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.toggle-btns input {
+  display: none;
+}
+
+.toggle-btns label {
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #ddd;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.toggle-btns input:checked + label {
+  background: #000000;
+  color: white;
+}
+
+/* Product Details */
+.pro-details {
+  background: white;
+  /* padding: 15px; */
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 15px;
+}
+.bn-text {
+  /* font-family: "Anek Bangla", sans-serif;
+  font-family: "Noto Serif Bengali", serif; */
+}
+/* Key Features */
+.key-features {
+  margin: 10px 0;
+}
+
+.key-features h3 {
+  font-size: 20px;
+  /* color: #007bff; */
+}
+
+.key-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.key-features li {
+  background: #e3f2fd;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Size */
+.size h3 {
+  font-size: 20px;
+  color: #dc3545;
+}
+
+.sizes {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.size-box {
+  background: #17a2b8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.size-box:hover {
+  background: #138496;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-details-page {
+  }
+  .all-products {
+    flex-direction: column;
+    padding: 1vw;
+    gap: 3vw;
+    height: 110vh;
+  }
+  .left-side img {
+    width: 35vw;
+  }
+  .left-side {
+    width: 100%;
+    padding: 4vw;
+  }
+  .right-side {
+    width: 100%;
+    padding: 5vw;
+  }
+  .name-origin h1 {
+    font-size: 10vw;
+  }
+  .part-3 .gallary {
+    padding: 3vw 2.4vw;
+  }
+}
