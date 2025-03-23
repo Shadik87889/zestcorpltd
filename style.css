@@ -1021,6 +1021,9 @@ footer {
     height: 6vw;
     margin-right: 4vw;
   }
+  .part-3 .gallary p {
+    font-size: 3.5vw;
+  }
   .hero-texts {
     top: 95vw;
     left: 5vw;
