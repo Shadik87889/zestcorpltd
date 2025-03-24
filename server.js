@@ -25,6 +25,7 @@ const pages = [
   "products",
   "apply",
   "application-form",
+  "resources",
 ];
 
 pages.forEach((page) => {
