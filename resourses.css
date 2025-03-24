@@ -154,6 +154,9 @@ header p {
     text-align: center;
     margin-top: 1.4vw;
   }
+  .preview {
+    display: none;
+  }
   .preview:hover {
     background: #e68900;
     transform: scale(1.01);
