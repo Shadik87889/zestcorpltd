@@ -166,7 +166,7 @@ header p {
   }
 }
 
-/* Fade-in Animation */
+/* Fade-in - Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
