@@ -155,7 +155,7 @@ header p {
     margin-top: 1.4vw;
   }
   .preview {
-    display: none;
+    /* display: none; */
   }
   .preview:hover {
     background: #e68900;

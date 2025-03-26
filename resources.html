@@ -142,7 +142,7 @@
               <a
                 href="#"
                 class="btn preview"
-                onclick="previewPDF('pdfs/মাছের-রোগ-নির্দেশিকা-ও-প্রতিকার.pdf')"
+                onclick="previewPDF('pdfs/মাছের-রোগ-নির্দেশিকা-ও-প্রতিকার.pdf', 'https://drive.google.com/file/d/11-mBkIjkMZYg1r62cluxge3Xmf8dPBTj/view?usp=drive_link')"
                 >Preview</a
               >
             </div>
@@ -160,7 +160,7 @@
               <a
                 href="#"
                 class="btn preview"
-                onclick="previewPDF('pdfs/রেণু-পুকুর-প্রস্তুতি.pdf')"
+                onclick="previewPDF('pdfs/রেণু-পুকুর-প্রস্তুতি.pdf', 'https://drive.google.com/file/d/1xE6qGAMJBWp-C4X_-wrHxelvAzcvZb9x/view?usp=drive_link')"
                 >Preview</a
               >
             </div>
@@ -177,7 +177,7 @@
               <a
                 href="#"
                 class="btn preview"
-                onclick="previewPDF('pdfs/মা-মাছের-ডিম-পরিপক্ক-করার-নিয়ম.pdf')"
+                onclick="previewPDF('pdfs/মা-মাছের-ডিম-পরিপক্ক-করার-নিয়ম.pdf', 'https://drive.google.com/file/d/1hYlBS4RsAX035giex8gAtbqqP6e7GbWH/view?usp=drive_link')"
                 >Preview</a
               >
             </div>
@@ -194,7 +194,7 @@
               <a
                 href="#"
                 class="btn preview"
-                onclick="previewPDF('pdfs/গিফট-প্রোগ্রাম.pdf')"
+                onclick="previewPDF('pdfs/গিফট-প্রোগ্রাম.pdf', 'https://drive.google.com/file/d/1BpWKDZhCEhFmIJLGHfGP7sQalAZpIujt/view?usp=drive_link')"
                 >Preview</a
               >
             </div>
@@ -211,7 +211,7 @@
               <a
                 href="#"
                 class="btn preview"
-                onclick="previewPDF('pdfs/খামারিদের-সাথে-কথোপকথন.pdf')"
+                onclick="previewPDF('pdfs/খামারিদের-সাথে-কথোপকথন.pdf', 'https://drive.google.com/file/d/15jyx1caAWl5bA3ogvVQE63WW3c9xi9-D/view?usp=drive_link')"
                 >Preview</a
               >
             </div>
@@ -228,9 +228,17 @@
     </div>
 
     <script>
-      function previewPDF(pdfUrl) {
-        document.getElementById("pdfViewer").src = pdfUrl;
-        document.getElementById("previewContainer").style.display = "flex";
+      function isMobile() {
+        return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      }
+
+      function previewPDF(pdfUrl, driveUrl) {
+        if (isMobile()) {
+          window.open(driveUrl, "_blank"); // Open Google Drive link in a new tab
+        } else {
+          document.getElementById("pdfViewer").src = pdfUrl;
+          document.getElementById("previewContainer").style.display = "flex";
+        }
       }
 
       function closePreview() {
