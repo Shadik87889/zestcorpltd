@@ -582,5 +582,5 @@ app.post(
 );
 // Start Server
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server is running at http://localhost:${PORT}/home`);
+  console.log(`Server is running at https://localhost:${PORT}/home`);
 });
