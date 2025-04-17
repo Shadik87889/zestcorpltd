@@ -132,3 +132,21 @@ function page2Anim() {
       });
     });
 }
+let ss = gsap.matchMedia();
+ss.add("(min-width: 768px)", () => {
+  gsap.to(".pt-four", {
+    left: "74vw",
+    duration: 1,
+    delay: 1.6,
+    ease: "power2.out",
+  });
+});
+let mm = gsap.matchMedia();
+mm.add("(max-width: 768px)", () => {
+  gsap.to(".pt-four", {
+    left: "0",
+    duration: 1,
+    delay: 1,
+    ease: "power2.out",
+  });
+});
