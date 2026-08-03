@@ -54,11 +54,122 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/Zest Corp Ltd Logo.png" />
 
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="apply-now-form.css" />
+
+    <!-- Injected Popup & Form Styles -->
+    <style>
+      /* Success Popup Styling */
+      .success-popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .success-popup-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .success-popup-box {
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 16px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        transform: translateY(30px) scale(0.95);
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      .success-popup-overlay.active .success-popup-box {
+        transform: translateY(0) scale(1);
+      }
+      .popup-icon {
+        width: 70px;
+        height: 70px;
+        background: #e6f9ed;
+        color: #27c93f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin: 0 auto 20px auto;
+        box-shadow: 0 0 20px rgba(39, 201, 63, 0.2);
+      }
+      .popup-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+      }
+      .popup-text {
+        font-size: 15px;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+      .popup-close-btn {
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .popup-close-btn:hover {
+        background: #333;
+        transform: translateY(-2px);
+      }
+
+      /* Loading State for Buttons */
+      .submit-button {
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      .submit-button.loading {
+        background-color: #555 !important;
+        pointer-events: none;
+        color: #fff;
+      }
+
+      /* Hide native loader to use the clean text replacement */
+      #loader {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
+    <!-- Hidden Iframe for silent email submission -->
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none;"
+    ></iframe>
+
     <div class="main-page">
       <div class="form-text-part">
         <div class="pt-one">
@@ -67,7 +178,23 @@
         </div>
       </div>
       <div class="contact-form-part">
-        <form id="job-application-form">
+        <!-- Added action, method, target, and enctype for file uploads -->
+        <form
+          id="job-application-form"
+          action="https://formsubmit.co/limited.zestcorp@gmail.com"
+          method="POST"
+          target="hidden_iframe"
+          enctype="multipart/form-data"
+        >
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Zest Corporation // New Partner Application"
+          />
+          <input type="hidden" name="_template" value="table" />
+
           <!-- Step 1 -->
           <div class="contact-form" id="form-part-1">
             <h2>Start your application</h2>
@@ -75,33 +202,42 @@
               <input
                 class="inputs"
                 type="text"
+                name="First_Name"
                 id="firstName"
                 placeholder="First Name *"
+                required
               />
               <input
                 class="inputs"
                 type="text"
+                name="Last_Name"
                 id="lastName"
                 placeholder="Last Name *"
+                required
               />
             </div>
             <div class="input-row">
               <input
                 class="inputs"
                 type="email"
+                name="Email"
                 id="email"
                 placeholder="Email Address *"
+                required
               />
             </div>
             <div class="input-row">
               <input
                 class="inputs"
                 type="number"
+                name="Phone"
                 id="phone"
                 placeholder="Phone Number (BN) *"
+                required
               />
             </div>
-            <button type="button" class="next-button" onclick="showPart(2)">
+            <!-- Show part 2, validate part 1 -->
+            <button type="button" class="next-button" onclick="showPart(2, 1)">
               Next
             </button>
           </div>
@@ -113,20 +249,24 @@
               <input
                 class="inputs"
                 type="text"
+                name="Birthday"
                 id="birthday"
                 placeholder="Birthday (MM/DD/YYYY) *"
+                required
               />
             </div>
             <div class="input-row">
-              <select class="inputs" id="gender">
-                <option value="">Select Gender *</option>
+              <select class="inputs" name="Gender" id="gender" required>
+                <option value="" disabled selected>Select Gender *</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
             </div>
             <div class="input-row">
-              <select class="inputs" id="degree">
-                <option value="">Select Highest Degree *</option>
+              <select class="inputs" name="Highest_Degree" id="degree" required>
+                <option value="" disabled selected
+                  >Select Highest Degree *</option
+                >
                 <option value="SSC">SSC</option>
                 <option value="HSC">HSC</option>
                 <option value="Bachelor">Bachelor</option>
@@ -137,22 +277,26 @@
               <input
                 class="inputs"
                 type="text"
+                name="Institution"
                 id="institution"
                 placeholder="Institution Name *"
+                required
               />
             </div>
             <div class="input-row">
               <input
                 class="inputs"
                 type="number"
+                name="Passing_Year"
                 id="passingYear"
                 placeholder="Passing Year *"
+                required
               />
             </div>
             <button type="button" class="prev-button" onclick="showPart(1)">
               Previous
             </button>
-            <button type="button" class="next-button" onclick="showPart(3)">
+            <button type="button" class="next-button" onclick="showPart(3, 2)">
               Next
             </button>
           </div>
@@ -161,8 +305,13 @@
           <div class="contact-form" id="form-part-3" style="display: none;">
             <h2>Work Experience & Final Details</h2>
             <div class="input-row">
-              <select class="inputs" id="workExperience">
-                <option value="">Work Experience *</option>
+              <select
+                class="inputs"
+                name="Work_Experience"
+                id="workExperience"
+                required
+              >
+                <option value="" disabled selected>Work Experience *</option>
                 <option value="No Experience">No Experience</option>
                 <option value="Less than 1 year">Less than 1 year</option>
                 <option value="1-3 years">1-3 years</option>
@@ -171,8 +320,10 @@
               </select>
             </div>
             <div class="input-row">
-              <select class="inputs" id="skills">
-                <option value="">Select Relevant Skills *</option>
+              <select class="inputs" name="Skills" id="skills" required>
+                <option value="" disabled selected
+                  >Select Relevant Skills *</option
+                >
                 <option value="Sales">Sales</option>
                 <option value="Marketing">Marketing</option>
                 <option value="Technical Support">Technical Support</option>
@@ -182,22 +333,26 @@
               <input
                 class="inputs"
                 type="text"
+                name="Preferred_Location"
                 id="workLocation"
                 placeholder="Preferred Work Location *"
+                required
               />
             </div>
             <div class="input-row">
               <input
                 class="inputs"
                 type="text"
+                name="Availability_Date"
                 id="joinDate"
                 placeholder="Availability to Join (MM/DD/YYYY) *"
+                required
               />
             </div>
             <button type="button" class="prev-button" onclick="showPart(2)">
               Previous
             </button>
-            <button type="button" class="next-button" onclick="showPart(4)">
+            <button type="button" class="next-button" onclick="showPart(4, 3)">
               Next
             </button>
           </div>
@@ -207,32 +362,153 @@
             <h2>File Uploads</h2>
             <div class="input-row">
               <label>Upload Your CV (Optional)</label>
-              <input class="inputs file-input" type="file" id="cv" />
+              <input
+                class="inputs file-input"
+                type="file"
+                name="CV_Attachment"
+                id="cv"
+                accept=".pdf,.doc,.docx"
+              />
             </div>
             <div class="input-row">
               <label>Upload Passport-size Photo *</label>
-              <input class="inputs file-input" type="file" id="photo" />
+              <input
+                class="inputs file-input"
+                type="file"
+                name="Photo_Attachment"
+                id="photo"
+                accept="image/*"
+                required
+              />
             </div>
             <div class="input-row">
               <label>Upload Supporting Documents (Optional)</label>
               <input
                 class="inputs file-input"
                 type="file"
+                name="Supporting_Docs"
                 id="supportingDocuments"
+                accept=".pdf,.doc,.docx,.jpg,.png"
               />
             </div>
             <button type="button" class="prev-button" onclick="showPart(3)">
               Previous
             </button>
-            <button type="submit" class="submit-button">Submit</button>
-            <div id="loader" class="loader">
-              <span></span><span></span><span></span>
-            </div>
+            <button type="submit" id="submitBtn" class="submit-button">
+              Submit
+            </button>
           </div>
         </form>
       </div>
     </div>
-    <script src="job-application-backend.js"></script>
-    <script src="apply-now-form.js"></script>
+
+    <!-- Success Popup Overlay -->
+    <div id="successPopup" class="success-popup-overlay">
+      <div class="success-popup-box">
+        <div class="popup-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="popup-title">Application Sent!</h3>
+        <p class="popup-text">
+          Thank you for applying to join Zest Corporation Ltd. Our recruitment
+          team will review your application and contact you soon.
+        </p>
+        <button id="closePopupBtn" class="popup-close-btn">Awesome</button>
+      </div>
+    </div>
+
+    <!-- Self-contained JavaScript Logic -->
+    <script>
+      // Function to handle multi-step navigation and validation
+      function showPart(nextStep, currentStep = null) {
+        // If moving forward, validate the current step first
+        if (currentStep !== null) {
+          const currentPart = document.getElementById(
+            "form-part-" + currentStep,
+          );
+          const requiredInputs = currentPart.querySelectorAll(
+            "input[required], select[required]",
+          );
+          let isValid = true;
+
+          requiredInputs.forEach((input) => {
+            if (!input.checkValidity()) {
+              input.reportValidity(); // Triggers the browser's native error tooltip
+              isValid = false;
+            }
+          });
+
+          // Stop execution if form is incomplete
+          if (!isValid) return;
+        }
+
+        // Hide all parts
+        for (let i = 1; i <= 4; i++) {
+          document.getElementById("form-part-" + i).style.display = "none";
+        }
+
+        // Show the target step
+        document.getElementById("form-part-" + nextStep).style.display =
+          "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const applicationForm = document.getElementById("job-application-form");
+        const submitBtn = document.getElementById("submitBtn");
+        const successPopup = document.getElementById("successPopup");
+        const closePopupBtn = document.getElementById("closePopupBtn");
+
+        if (applicationForm && submitBtn) {
+          const originalBtnText = submitBtn.innerText;
+
+          applicationForm.addEventListener("submit", function (e) {
+            // Prevent default page reload
+            e.preventDefault();
+
+            // 1. Trigger Loading State
+            submitBtn.innerText = "SUBMITTING...";
+            submitBtn.classList.add("loading");
+
+            // 2. Submit form silently to the hidden iframe
+            applicationForm.submit();
+
+            // 3. Simulate network delay, reset UI, and show success popup
+            setTimeout(() => {
+              // Reset UI Button
+              submitBtn.innerText = originalBtnText;
+              submitBtn.classList.remove("loading");
+
+              // Reset Form Inputs
+              applicationForm.reset();
+
+              // Go back to step 1
+              showPart(1);
+
+              // Trigger Success Popup
+              successPopup.classList.add("active");
+
+              // Auto-close popup after 6 seconds
+              setTimeout(() => {
+                successPopup.classList.remove("active");
+              }, 6000);
+            }, 1500); // 1.5 seconds wait
+          });
+        }
+
+        // Handle Manual Popup Close
+        if (closePopupBtn && successPopup) {
+          closePopupBtn.addEventListener("click", () => {
+            successPopup.classList.remove("active");
+          });
+
+          // Also close when clicking outside the popup box
+          successPopup.addEventListener("click", (e) => {
+            if (e.target === successPopup) {
+              successPopup.classList.remove("active");
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
